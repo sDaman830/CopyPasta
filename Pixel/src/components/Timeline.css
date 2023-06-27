@@ -3,8 +3,26 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-.container{
-    border-radius: 1.5rem;
-    box-shadow: 5px 7.5px 10px #;
+.containerEvent{
+    background-image: url("Desktop-2.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
 }
+.timebox{
+    width: 90vw;
+    padding: 1rem;
+    margin: 0.75rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+    font-weight: 400;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.18);
+
+}
+
