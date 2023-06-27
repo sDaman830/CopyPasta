@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+    
+}
+
+.container{
+    display: flex;
+    justify-content:space-around;
+    background-color:rgb(2, 44, 44);
+    flex-wrap: wrap;
+    padding: 2rem;
+    color: white;
+    
+
+}
+.footerLast{
+    display:flex;
+    justify-content: space-around;
+    background-color:black;
+    flex-wrap: wrap;
+    padding: 1rem;
+    color: white;
+    
+}
+a{
+    color: inherit;
+    text-decoration: inherit;
+    color: white;
+}
+a:hover{
+    padding-bottom: 12px;
+    border-bottom: 3px solid var(--secondary-color);
+    
+}
