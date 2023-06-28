@@ -19,7 +19,7 @@ const Footer=()=>{
                 <p>Awards</p>
               </a>
               <a href="/">
-                <p>Contsct Us</p>
+                <p>Contact Us</p>
               </a>
             </div>
             

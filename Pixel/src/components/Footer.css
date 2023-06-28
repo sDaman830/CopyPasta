@@ -26,6 +26,7 @@ a{
     color: inherit;
     text-decoration: inherit;
     color: white;
+    line-height: 2rem;
 }
 a:hover{
     padding-bottom: 12px;
