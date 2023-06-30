@@ -13,16 +13,16 @@
 }
 .containersponsor{
     display: flex;
-    flex-direction:row;
     padding:1rem;
     margin: 1rem;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
 }
 
-.sponimg{
+.Sponimage{
     max-width: 400px;
+    width: 100%;
+    height: auto;
 }
 
 .sponHome{

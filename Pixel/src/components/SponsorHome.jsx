@@ -21,7 +21,7 @@ const SponsorHome=()=>{
             {SponsorLogoData.map((ldata,id)=>{
             return(
                 <div className='sponimg'>
-                <img src={ldata.logoURL} alt="sponsors"/>
+                <img className='Sponimage' src={ldata.logoURL} alt="sponsors"/>
                 </div>
             )
         })}
