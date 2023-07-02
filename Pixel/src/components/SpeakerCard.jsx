@@ -143,7 +143,10 @@ function CardDetails({ handleClick, person, id }) {
   return (
     <div className="speaker-card card">
       <div className="speaker-card-image">
-        <img src={person.ImgLink} alt={person.Name} />
+        <img className=".committie-speaker-card-images"
+              src={person.ImgLink}
+              alt={person.Name}
+            />
       </div>
       <h2 className="speaker-name">{person.Name}</h2>
       <div className="speaker-content">
