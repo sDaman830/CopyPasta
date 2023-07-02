@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .AwardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 1rem;
+    margin: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .AwardBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    width: 40vw;
+    height: 15rem;
+  
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    border: 1px solid rgba(225, 225, 225, 0.18);
+    padding: 2rem;
+    margin: 1rem;
+  }
+  
+  .AwardName {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 30%;
+    width: 90%;
+  }
+  
+  .AwardDesc {
+    text-align: center;
+    height: 70%;
+    width: 90%;
+  }
+  
+  .Atitle1 {
+    
+    font-weight: bolder;
+    font-size: x-large;
+    color: #ffffff;
+    padding: 0.25rem;
+  }
+  
+  .Atitle2 {
+    font-weight: bolder;
+    font-size: large;
+    color: #ffffff;
+    padding: 0.25rem;
+  }
+  
+  .Apara {
+    color: #ffffff;
+    line-height: 1.5rem;
+    padding: 0.25rem;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 1150px) {
+    .AwardContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      
+      .AwardBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: auto;
+      
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 1rem;
+        border: 1px solid rgba(225, 225, 225, 0.18);
+        padding: 1rem;
+        margin: 1rem;
+      }
+      
+      .AwardName {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 30%;
+        width: 90%;
+      }
+      
+      .AwardDesc {
+        height: 70%;
+        width: 90%;
+      }
+  }
+  
