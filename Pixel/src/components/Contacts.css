@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+   
+}
+
+.Majboorhumein{
+    background-image: url("Desktop-2.png");
+}
+
+.ContactContainer{
+    display: flex;
+    flex-direction:column;
+    padding: 1rem;
+    margin: 2rem;
+    overflow: hidden;
+    
+}
+
+.ContactTitle{
+    margin: 0.5rem;
+    padding-left: 3rem;
+}
+
+.ContactBox{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90vw;
+    
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius: 1rem;
+
+    padding: 1rem;
+    margin: 2rem;
+}
+
+.ContactDesc{
+    margin: 2rem;
+    line-height: 1.75rem;
+}
+.ContactImage{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 2rem;
+    border-radius: 1rem;
+}

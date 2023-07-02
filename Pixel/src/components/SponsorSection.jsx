@@ -92,7 +92,7 @@ const SponsorSection = () => {
   return (
     <div className='SponsorContain'>
         <h1 className='TitleSpon'>Title Sponsors</h1>
-        <div className='containersponsor'>
+        <div className='SScontainersponsor'>
             {TitleSponsorData[0].map((Tdata) => {
                 return (
                     <div className='sponimg' key={Tdata.id}>
