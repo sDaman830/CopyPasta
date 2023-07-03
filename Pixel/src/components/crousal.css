@@ -2,7 +2,7 @@
   margin-top: 5rem;
   position: relative;
 
-  width: vw;
+  width:auto;
   max-height: 80vh;
   overflow: hidden;
   transition: transform 0.5s ease-out;
