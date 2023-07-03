@@ -88,8 +88,6 @@ const PlatinumSponsorData=[
     }
 ]
 
-console.log(Sponsors)
-
 const SponsorSection = () => {
   return (
     <div className='SponsorContain'>

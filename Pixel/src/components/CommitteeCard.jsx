@@ -1,5 +1,6 @@
 import React from "react";
 import "./Card.css";
+import '/index.js';
 
 const commitieeMembers = [
   {
@@ -222,17 +223,19 @@ const commitieeMembers = [
 
 export default function Committee() {
   return (
-    <div className="container">
-      {commitieeMembers?.map((member, i) => (
+    <div className="CommHeader">
+    <h1 className="CommHeading">Committee Members</h1>
+    <div className="Commcontainer">
+      {commitieeMembers?.map((member) => (
         <CommitieeCard
           name={member.Name}
           imageLink={member.ImgLink}
           Designation={member.Designation}
           Institute={member.Institute}
           ProfileLink={member.ProfileLink}
-          key={i}
         />
       ))}
+    </div>
     </div>
   );
 }
