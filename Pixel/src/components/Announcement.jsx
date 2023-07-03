@@ -3,76 +3,51 @@ import { useState } from 'react'
 import './Announcement.css'
 
 const DownloadsData=[
-    [
         {
-            "id": "648e91fb15868a27f2d4844a",
+            "id": "64950d1c721e1699599c35db",
             "confId": "647f315f62cdb3a26174fc38",
-            "title": "Paper Submission deadline",
-            "date": "2023-08-01T00:00:00.000Z",
+            "title": "History",
+            "metaDescription": "from 1989",
+            "description": "NPSC came into existence in the early 1970’s, amidst criticism about the gross inequalities and disparities in the educational system; thus bringing into sharp focus an ideological debate regarding the role of the English Medium Private Schools and the desirability of exercising a greater regulatory control over their functioning. It was also a time to implement the recommendations of the Kothari Education Commission Report of 1964/6.  What followed was a concurrence of some of the leading unaided recognized schools in the capital to establish an association of privately managed recognized schools so that collective action could be taken on some of the vital issues affecting their functioning keeping the Constitution of Indian Public Schools Conference as a guide, a committee was drawn up.",
+            "feature": true,
             "sequence": 0,
-            "extended": false,
-            "newDate": null,
-            "completed": false,
-            "featured": true,
-            "createdAt": "2023-06-18T05:11:19.933Z",
-            "updatedAt": "2023-06-18T05:11:19.933Z"
+            "new": true,
+            "hidden": false,
+            "link": null,
+            "createdAt": "2023-06-23T03:10:17.793Z",
+            "updatedAt": "2023-06-23T03:12:28.458Z"
         },
         {
-            "id": "648e923b15868a27f2d4844f",
+            "id": "64950d8a721e1699599c35e4",
             "confId": "647f315f62cdb3a26174fc38",
-            "title": "Paper acceptance intimation",
-            "date": "2023-09-01T00:00:00.000Z",
+            "title": "Vision",
+            "metaDescription": "To movitate young researches",
+            "description": "National, making a mark in education at the national level by enrolling schools not only from Delhi but from other states and Indian Schools abroad.  Progressive, in the belief that we would act as pacesetters and sow seeds of good ideas and practices in education.  Reach out, into the community by setting up a number of community and school linkages and work in partnership with less endowed institutions to improve the general quality of education.  Preserve, basic traditions and cultural values of our democratic and secular society, impart good human and social values.  Initiate, programs for both teachers and students for the introduction of progressive ideas, values and new learning- teaching methodologies in our institutions.",
+            "feature": true,
             "sequence": 1,
-            "extended": false,
-            "newDate": null,
-            "completed": false,
-            "featured": true,
-            "createdAt": "2023-06-18T05:12:25.347Z",
-            "updatedAt": "2023-06-18T05:12:25.347Z"
+            "new": true,
+            "hidden": false,
+            "link": null,
+            "createdAt": "2023-06-23T03:12:07.671Z",
+            "updatedAt": "2023-06-23T03:13:03.171Z"
         },
         {
-            "id": "648e926715868a27f2d48453",
+            "id": "64950e0e721e1699599c35ef",
             "confId": "647f315f62cdb3a26174fc38",
-            "title": "paper registration starts",
-            "date": "2023-08-07T00:00:00.000Z",
+            "title": "Paper submission extended",
+            "metaDescription": "Extended date: 23-08-2023",
+            "description": "the submission of paper has been extended to 23-08-2023",
+            "feature": true,
             "sequence": 2,
-            "extended": false,
-            "newDate": null,
-            "completed": false,
-            "featured": true,
-            "createdAt": "2023-06-18T05:13:07.945Z",
-            "updatedAt": "2023-06-18T05:13:55.043Z"
+            "new": true,
+            "hidden": false,
+            "link": null,
+            "createdAt": "2023-06-23T03:14:17.954Z",
+            "updatedAt": "2023-06-23T03:14:17.954Z"
         },
-        {
-            "id": "648e929615868a27f2d48458",
-            "confId": "647f315f62cdb3a26174fc38",
-            "title": "Paper registration ends",
-            "date": "2023-08-14T00:00:00.000Z",
-            "sequence": 3,
-            "extended": false,
-            "newDate": null,
-            "completed": false,
-            "featured": true,
-            "createdAt": "2023-06-18T05:13:55.043Z",
-            "updatedAt": "2023-06-18T05:13:55.043Z"
-        },
-        {
-            "id": "649503e9721e1699599c35af",
-            "confId": "6492f77d1cc9629afd1c7008",
-            "title": "Conf-2 paper submission",
-            "date": "2023-09-01T00:00:00.000Z",
-            "sequence": 0,
-            "extended": false,
-            "newDate": null,
-            "completed": false,
-            "featured": true,
-            "createdAt": "2023-01-01T00:00:00.000Z",
-            "updatedAt": "2023-01-01T00:00:00.000Z"
-        }
-    ]
 ]
 
-const announcement=()=>{
+export default function Accordion(){
     
     const [selected, setSelected]=useState(null)
 
@@ -85,7 +60,6 @@ const announcement=()=>{
     return (
         <div className="accordWrapper">
             <div className='accord'>
-            <h1 className='announcement'>Announcements</h1>
         {DownloadsData.map((item,i)=>{
             return(
                 <>
@@ -105,4 +79,3 @@ const announcement=()=>{
     </div>
     )
     }
-    export default announcement
