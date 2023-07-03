@@ -2,8 +2,8 @@ const apiKey = "G6mS3Y";
 const conferencesUrl = "https://conference.cyclic.app/conf";
 const baseUrl = "https://conference.cyclic.app";
 
-let sponsors;
-let awardsData;
+let titleSponsors;
+let platinumSponsors;
 let navbarData;
 let contactsData;
 let announcementsData;
@@ -25,8 +25,7 @@ async function fetchConferenceId() {
         const conferences = await response.json();
         const conferenceId = conferences[0].id; // Selecting the first conference ID
         console.log("Conference ID:", conferenceId);
-        fetchConferenceData(conferenceId);
-        fetchAwardsData(conferenceId);
+        fetchSponsorsData(conferenceId);
         fetchNavbarData(conferenceId);
         fetchContactsData(conferenceId);
         fetchAnnouncementsData(conferenceId);
@@ -42,7 +41,7 @@ async function fetchConferenceId() {
     }
 }
 
-async function fetchConferenceData(conferenceId) {
+async function fetchSponsorsData(conferenceId) {
     const sponsorUrl = `${baseUrl}/sponsors/conference/${conferenceId}`;
     try {
         const response = await fetch(sponsorUrl, {
@@ -50,26 +49,15 @@ async function fetchConferenceData(conferenceId) {
                 Authorization: apiKey,
             },
         });
-        sponsors = await response.json();
-        console.log("Conference Data:", sponsors);
-        // Process conference data here
+        const sponsorsData = await response.json();
+        console.log("Sponsors Data:", sponsorsData);
+        platinumSponsors = sponsorsData.filter(sponsor => sponsor.type === 'Platinum Sponsors');
+        console.log("Platinum Sponsors:", platinumSponsors);
+        titleSponsors = sponsorsData.filter(sponsor => sponsor.type === 'Title Sponsors');
+        console.log("Title Sponsors:", titleSponsors);
+        // Process sponsors data here
     } catch (error) {
-        console.error("Error fetching conference sponsors:", error);
-    }
-}
-
-async function fetchAwardsData(conferenceId) {
-    const awardsUrl = `${baseUrl}/awards/conference/${conferenceId}`;
-    try {
-        const response = await fetch(awardsUrl, {
-            headers: {
-                Authorization: apiKey,
-            },
-        });
-        awardsData = await response.json();
-        console.log("Awards Data:", awardsData);
-    } catch (error) {
-        console.error("Error fetching awards data:", error);
+        console.error("Error fetching sponsors data:", error);
     }
 }
 
@@ -83,6 +71,7 @@ async function fetchNavbarData(conferenceId) {
         });
         navbarData = await response.json();
         console.log("Navbar Data:", navbarData);
+        // Process navbar data here
     } catch (error) {
         console.error("Error fetching navbar data:", error);
     }
@@ -98,6 +87,7 @@ async function fetchContactsData(conferenceId) {
         });
         contactsData = await response.json();
         console.log("Contacts Data:", contactsData);
+        // Process contacts data here
     } catch (error) {
         console.error("Error fetching contacts data:", error);
     }
@@ -113,6 +103,7 @@ async function fetchAnnouncementsData(conferenceId) {
         });
         announcementsData = await response.json();
         console.log("Announcements Data:", announcementsData);
+        // Process announcements data here
     } catch (error) {
         console.error("Error fetching announcements data:", error);
     }
@@ -128,6 +119,7 @@ async function fetchCommitteeData(conferenceId) {
         });
         committeeData = await response.json();
         console.log("Committee Data:", committeeData);
+        // Process committee data here
     } catch (error) {
         console.error("Error fetching committee data:", error);
     }
@@ -143,6 +135,7 @@ async function fetchEventDatesData(conferenceId) {
         });
         eventDatesData = await response.json();
         console.log("Event Dates Data:", eventDatesData);
+        // Process event dates data here
     } catch (error) {
         console.error("Error fetching event dates data:", error);
     }
@@ -158,6 +151,7 @@ async function fetchHomeData(conferenceId) {
         });
         homeData = await response.json();
         console.log("Home Data:", homeData);
+        // Process home data here
     } catch (error) {
         console.error("Error fetching home data:", error);
     }
@@ -173,6 +167,7 @@ async function fetchImagesData(conferenceId) {
         });
         imagesData = await response.json();
         console.log("Images Data:", imagesData);
+        // Process images data here
     } catch (error) {
         console.error("Error fetching images data:", error);
     }
@@ -188,6 +183,7 @@ async function fetchLocationData(conferenceId) {
         });
         locationData = await response.json();
         console.log("Location Data:", locationData);
+        // Process location data here
     } catch (error) {
         console.error("Error fetching location data:", error);
     }
@@ -203,6 +199,7 @@ async function fetchSpeakersData(conferenceId) {
         });
         speakersData = await response.json();
         console.log("Speakers Data:", speakersData);
+        // Process speakers data here
     } catch (error) {
         console.error("Error fetching speakers data:", error);
     }
@@ -218,6 +215,7 @@ async function fetchParticipantsData(conferenceId) {
         });
         participantsData = await response.json();
         console.log("Participants Data:", participantsData);
+        // Process participants data here
     } catch (error) {
         console.error("Error fetching participants data:", error);
     }
