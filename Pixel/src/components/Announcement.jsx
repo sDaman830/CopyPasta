@@ -59,7 +59,7 @@ export default function announcement(){
     }
     return (
         <div className="accordWrapper">
-            
+            <h1 className='AnnounceHeading'>Announcements</h1>
             <div className='accord'>
         {DownloadsData.map((item,i)=>{
             return(
