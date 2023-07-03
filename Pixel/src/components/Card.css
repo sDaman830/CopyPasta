@@ -1,212 +1,212 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    background-color: black;
-}
-  
-  .card {
-    color: white;
-    height: auto;
-    position: relative;
-    padding: 0.5rem;
-    margin: 1rem;
-    
-    background: linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.1),
-      rgba(255, 255, 255, 0)
-    );
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 1rem;
-    border: 1px solid rgba(225, 225, 225, 0.18);
-    
-    margin-bottom: 4rem;
-    transition: all 0.5s cubic-bezier(1,0,1,0);;
-  }
-  
-  .container {
-    color: white;
-    display: flex;
-    gap: 4rem;
-    text-align: center;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 2rem;
-    line-height: 1.4;
-    justify-content: center;
-  }
-  
-  .commitiee-title {
-    margin-top: 6rem;
-    font-size: 1.5rem;
-  }
-  
-  .commitiee-branch {
-    font-size: 1.2rem;
-    font-weight: 300;
-  }
-  
-  .commitiee-card {
-    min-width: 15rem;
-    max-width: 12.5rem;
-  }
-  
-  .container .card:hover {
-    box-shadow: 0px 0px 15px 1px #e0dbdb3f; 
-  }
-  
-  .card .card-image {
-    height: 8.7rem;
-    width: 8.7rem;
-    border-radius: 50%;
-    position: absolute;
-    background-color: blue;
-    top: -20%;
-    left: 50%;
-    transform: translate(-50%, -5%);
-    background: white;
-  }
-  
-  /*For speaker Page */
-  
-  .speaker-card {
-    min-width: 18rem;
-    max-width: 18rem;
-    box-shadow: 0px 0px 15px 1px #e0dbdb3f;
-    
-    height: 23rem;
-    line-height: 1.5;
-    transition: all ease 0.3s;
-  }
-  
-  .speaker-card-image {
-    height: 8.7rem;
-    width: 8.7rem;
-    border-radius: 50%;
-    background-color: blue;
-    background: white;
-    margin-top: 1rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .speaker-name {
-    margin-top: 0.5rem;
-    font-size: 1.5rem;
-  }
-  
-  .speaker-content {
-    font-weight: 200;
-    opacity: 70%;
-  }
-  
-  .btn {
-    padding: 0.7rem 1.1rem;
-    color: white;
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    border-radius: 1rem;
-    border: none;
-    
-    letter-spacing: 0.2px;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-weight: 400;
-    
-    font-size: 0.85rem;
-    background: linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.1),
-      rgba(255, 255, 255, 0)
-    );
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 1rem;
-    
-  }
-  
-  .btn:hover {
-    box-shadow: 0px 0px 15px #e0dbdb3f;
-    background-color: rgba(255, 255, 255, 0.2);
-  }
-  
-  .modal {
-    position: fixed;
-    left: 50%;
-    top : 50%;
-    transform: translate(-50%, -50%);
-    width: 85vw;
-    height: 85vh;
-    padding: 2rem;
-    border-radius: 1rem;
-    z-index: 10000;
-    overflow-y: scroll;
-    transition: all 0.5s cubic-bezier(1,0,1,0);
-    
-    background-color:#242424 ;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 1rem;
-    border: 1px solid rgba(225, 225, 225, 0.18);
-  }
-  
-  .close-modal {
-    position: fixed;
-    top: 0.5rem;
-    right: 1rem;
-    font-size: 2.5rem;
-    color: white;
-    cursor: pointer;
-    border: none;
-    background: none;
-    transition: all 0.5s cubic-bezier(1,0,1,0);
-  }
-  
-  .modal::-webkit-scrollbar {
-    display: none;
-  }
-  
-  .modal-speaker-content {
-    line-height: 1.5;
-    text-align: left;
-    margin: 1.2rem;
-    word-spacing: 0.2ch;
-  }
-  a:link,
-  a:visited {
-    text-decoration: none;
-    color: rgb(46, 46, 197);
-  }
-  a:hover {
-    cursor: pointer;
-  }
-  
-  a {
-    font-size: 1.1rem;
-  }
-  .modal-titles {
-    margin-top: 0.6rem;
-    font-size: 1.2rem;
-    font-weight: 900rem;
-  }
-  span {
-    color: #e4dbdb;
-    font-size: 1.1rem;
-    
-    /* text-decoration: none; */
-  }
-  
- .committie-speaker-card-images {
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-  border-radius: 50%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  background-color: black;
+}
+
+.card {
+  color: white;
+  height: auto;
+  position: relative;
+  padding: 0.5rem;
+  margin: 1rem;
+  
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  border: 1px solid rgba(225, 225, 225, 0.18);
+  
+  margin-bottom: 4rem;
+  transition: all 0.5s cubic-bezier(1,0,1,0);;
+}
+
+.container {
+  color: white;
+  display: flex;
+  gap: 4rem;
+  text-align: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 2rem;
+  line-height: 1.4;
+  justify-content: center;
+}
+
+.commitiee-title {
+  margin-top: 6rem;
+  font-size: 1.5rem;
+}
+
+.commitiee-branch {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.commitiee-card {
+  min-width: 15rem;
+  max-width: 12.5rem;
+}
+
+.container .card:hover {
+  box-shadow: 0px 0px 15px 1px #e0dbdb3f; 
+}
+
+.card .card-image {
+  height: 8.7rem;
+  width: 8.7rem;
+  border-radius: 50%;
+  position: absolute;
+  background-color: blue;
+  top: -20%;
+  left: 50%;
+  transform: translate(-50%, -5%);
+  background: white;
+}
+
+/*For speaker Page */
+
+.speaker-card {
+  min-width: 18rem;
+  max-width: 18rem;
+  box-shadow: 0px 0px 15px 1px #e0dbdb3f;
+  
+  height: 23rem;
+  line-height: 1.5;
+  transition: all ease 0.3s;
+}
+
+.speaker-card-image {
+  height: 8.7rem;
+  width: 8.7rem;
+  border-radius: 50%;
+  background-color: blue;
+  background: white;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.speaker-name {
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.speaker-content {
+  font-weight: 200;
+  opacity: 70%;
+}
+
+.btn {
+  padding: 0.7rem 1.1rem;
+  color: white;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 1rem;
+  border: none;
+  
+  letter-spacing: 0.2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 400;
+  
+  font-size: 0.85rem;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  
+}
+
+.btn:hover {
+  box-shadow: 0px 0px 15px #e0dbdb3f;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.modal {
+  position: fixed;
+  left: 50%;
+  top : 50%;
+  transform: translate(-50%, -50%);
+  width: 85vw;
+  height: 85vh;
+  padding: 2rem;
+  border-radius: 1rem;
+  z-index: 10000;
+  overflow-y: scroll;
+  transition: all 0.5s cubic-bezier(1,0,1,0);
+  
+  background-color:#242424 ;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  border: 1px solid rgba(225, 225, 225, 0.18);
+}
+
+.close-modal {
+  position: fixed;
+  top: 0.5rem;
+  right: 1rem;
+  font-size: 2.5rem;
+  color: white;
+  cursor: pointer;
+  border: none;
+  background: none;
+  transition: all 0.5s cubic-bezier(1,0,1,0);
+}
+
+.modal::-webkit-scrollbar {
+  display: none;
+}
+
+.modal-speaker-content {
+  line-height: 1.5;
+  text-align: left;
+  margin: 1.2rem;
+  word-spacing: 0.2ch;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+  color: rgb(46, 46, 197);
+}
+a:hover {
+  cursor: pointer;
+}
+
+a {
+  font-size: 1.1rem;
+}
+.modal-titles {
+  margin-top: 0.6rem;
+  font-size: 1.2rem;
+  font-weight: 900rem;
+}
+span {
+  color: #e4dbdb;
+  font-size: 1.1rem;
+  
+
+  /* text-decoration: none; */
+}
+
+.committie-speaker-card-images {
+object-fit: cover;
+height: 100%;
+width: 100%;
+border-radius: 50%;
+}
