@@ -104,7 +104,7 @@ const SponsorSection = () => {
         <br></br>
 
         <h1 className='PlatinumSpon'>Platinum Sponsors</h1>
-        <div className='containersponsor'>
+        <div className='SScontainersponsor'>
             {PlatinumSponsorData.map((Pdata,id)=>{
             return(
                 <div className='sponimg'>

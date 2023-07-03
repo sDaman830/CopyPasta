@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import {Link} from 'react-router-dom'
 import "./Footer.css";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import { Icon } from "leaflet";
@@ -11,21 +12,21 @@ const Footer = () => {
         <div className="divLink">
           <h1 className="FooterLogo">Conference</h1>
           <br></br>
-          <a className="FooterLinks" href="/">
+          <Link className="FooterLinks" to="/">
             <p>Home</p>
-          </a>
-          <a className="FooterLinks" href="/">
+          </Link>
+          <Link className="FooterLinks" to="/speakers">
             <p>Speakers</p>
-          </a>
-          <a className="FooterLinks" href="/">
+          </Link>
+          <Link className="FooterLinks" to="/committee">
             <p>Committee</p>
-          </a>
-          <a className="FooterLinks" href="/">
+          </Link>
+          <Link className="FooterLinks" to="/awards">
             <p>Awards</p>
-          </a>
-          <a className="FooterLinks" href="/">
+          </Link>
+          <Link className="FooterLinks" to="/contact">
             <p>Contact Us</p>
-          </a>
+          </Link>
         </div>
 
         <div>

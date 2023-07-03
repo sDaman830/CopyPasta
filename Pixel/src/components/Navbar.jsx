@@ -2,6 +2,7 @@ import React from 'react'
 import {useState} from 'react'
 import './Navbar.css'
 import {FaBars, FaTimes} from 'react-icons/fa'
+import {Link} from 'react-router-dom'
 
 const Navbar=()=>{
 
@@ -22,9 +23,9 @@ const Navbar=()=>{
     return (
         <div className={color? 'headercompo headercompo-bg':'headercompo'}>
             <nav className='navbar'>
-                <a href='/' className='logo'>
+                <Link to="/" className='Navlogo'>
                     <h1>Conference</h1>
-                </a>
+                </Link>
                 <div className='hamburger' onClick={handleClick}>
                     {click ? (<FaTimes size={30} style={{ color: '#ffffff' }} />)
                         : (<FaBars size={30} style={{ color: '#ffffff' }} />)}
@@ -32,19 +33,19 @@ const Navbar=()=>{
                 </div>
                 <ul className={click ? "nav-menu active" : "nav-menu"}>
                     <li className='nav-item'>
-                        <a href='/' onClick={closeMenu}>Home</a>
+                        <Link to="/" onClick={closeMenu}>Home</Link>
                     </li>
                     <li className='nav-item'>
-                        <a href='/' onClick={closeMenu}>Speakers</a>
+                        <Link to="/speakers" onClick={closeMenu}>Speakers</Link>
                     </li>
                     <li className='nav-item'>
-                        <a href='/' onClick={closeMenu}>Committee</a>
+                        <Link to='/committee' onClick={closeMenu}>Committee</Link>
                     </li>
                     <li className='nav-item'>
-                        <a href='/' onClick={closeMenu}>Awards</a>
+                        <Link to='/awards' onClick={closeMenu}>Awards</Link>
                     </li>
                     <li className='nav-item'>
-                        <a href='/' onClick={closeMenu}>Contact Us</a>
+                        <Link to='/contact' onClick={closeMenu}>Contact Us</Link>
                     </li>
                 </ul>
             </nav>

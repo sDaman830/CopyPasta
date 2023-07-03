@@ -15,9 +15,9 @@ const SponsorLogoData=[
 ]
 const SponsorHome=()=>{
     return(
-        <div className='majboori'>
+        <div className='majbooriya'>
         <h1>Our Sponsors</h1>
-        <div className='containersponsor'>
+        <div className='containersponsorHome'>
             {SponsorLogoData.map((ldata,id)=>{
             return(
                 <div className='sponimg'>

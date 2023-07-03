@@ -179,7 +179,7 @@ body {
   margin: 1.2rem;
   word-spacing: 0.2ch;
 }
-a:link,
+/*a:link,
 a:visited {
   text-decoration: none;
   color: rgb(46, 46, 197);
@@ -190,7 +190,7 @@ a:hover {
 
 a {
   font-size: 1.1rem;
-}
+}*/
 .modal-titles {
   margin-top: 0.6rem;
   font-size: 1.2rem;
