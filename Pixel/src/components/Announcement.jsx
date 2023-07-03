@@ -44,10 +44,10 @@ const DownloadsData=[
             "link": null,
             "createdAt": "2023-06-23T03:14:17.954Z",
             "updatedAt": "2023-06-23T03:14:17.954Z"
-        },
+        }
 ]
 
-export default function Accordion(){
+export default function announcement(){
     
     const [selected, setSelected]=useState(null)
 
@@ -59,6 +59,7 @@ export default function Accordion(){
     }
     return (
         <div className="accordWrapper">
+            
             <div className='accord'>
         {DownloadsData.map((item,i)=>{
             return(
@@ -69,12 +70,13 @@ export default function Accordion(){
                     <span>{selected===i ? '-':'+'}</span>
                 </div>
                 <div className={selected===i ? 'content show':'content'}>
-                    <p>{item.links}</p>
+                    <p>{item.description}</p>
                 </div>
                 </div>
                 </>
             )
         })}
+        
         </div>
     </div>
     )
