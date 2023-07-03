@@ -1,5 +1,6 @@
 import React from 'react'
 import './SponsorSection.css'
+import '/index.js'
 
 const TitleSponsorData=[
     [

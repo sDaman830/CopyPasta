@@ -54,7 +54,7 @@ function Mapty() {
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
         <Marker position={position}>
-          <Popup>???</Popup>
+          <Popup>NIT Jalandhar</Popup>
         </Marker>
       </MapContainer>
     </div>
