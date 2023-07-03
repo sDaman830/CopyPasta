@@ -2,8 +2,8 @@
   margin-top: 5rem;
   position: relative;
 
-  width:auto;
-  max-height: 80vh;
+  width: 95vw;
+  max-height: 90vh;
   overflow: hidden;
   transition: transform 0.5s ease-out;
   background-color: #fff;
