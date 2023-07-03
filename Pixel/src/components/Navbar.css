@@ -1,4 +1,5 @@
 .headercompo {
+     overflow: hidden;
     position: fixed;
     height: 5rem;
     width: 100vw;
