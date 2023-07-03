@@ -4,6 +4,10 @@ import "./crousal.css";
 // Object that API fetch //
 const imageLinks = [
   {
+    imgLink:"AkleemCarousel.svg"
+  },
+  {
+
     id: "6492f8634bd54b3b9c0906ec",
     confId: "647f315f62cdb3a26174fc38",
     name: "WIE",
