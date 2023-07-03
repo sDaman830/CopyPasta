@@ -9,14 +9,16 @@ import SpeakerCard from './Components/SpeakerCard'
 import CommitteeCard from './Components/CommitteeCard'
 import SpeakerHeading from './pages/SpeakerHeading'
 import AwardPage from './pages/AwardPage'
-import Contacts from './components/Contacts'
+import ContactPage from './pages/ContactPage'
 
 
 
 function App() {
     return(
         <>
-        <Contacts />
+        <Navbar />
+        <ContactPage />
+        <Footer />
         </>
     )
 }

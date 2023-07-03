@@ -6,16 +6,13 @@
 }
 
 .Majboorhumein{
-    background-image: url("Desktop-2.png");
-}
-
-.ContactContainer{
+    background-image: url("/Desktop-2.png");
+    background-size: cover;
     display: flex;
-    flex-direction:column;
-    padding: 1rem;
-    margin: 2rem;
-    overflow: hidden;
-    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
 }
 
 .ContactTitle{
@@ -27,15 +24,15 @@
     display: flex;
     flex-wrap: wrap;
     width: 90vw;
-    
+    padding: 1rem;
+    margin: 0.75rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+    font-weight: 400;
     background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255,255,255,0.18);
-    border-radius: 1rem;
-
-    padding: 1rem;
-    margin: 2rem;
 }
 
 .ContactDesc{
@@ -48,4 +45,21 @@
     object-fit: cover;
     margin: 2rem;
     border-radius: 1rem;
+}
+
+.ContactBox:hover{
+    box-shadow: 0 4px 16px 0 rgba(0,0,0,0.37);
+}
+
+@media screen and (max-width:900px){
+    .ContactBox{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .ContactTitle{
+        font-size: xx-large;
+    }
 }

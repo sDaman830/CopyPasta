@@ -58,11 +58,12 @@ const ContactData=[
 
 const Contacts = () => {
   return (
-    <div className='ContactContainer'>
+        <>
+        <div className='Majboorhumein'>
         {ContactData.map((cdata,id)=>{
             return(
                 <>
-                <div className='Majboorhumein'>
+                
                 <h1 className='ContactTitle'>{cdata.title}</h1>
                 <div className='ContactBox'>
                     <div className='Contactimg'>
@@ -75,14 +76,14 @@ const Contacts = () => {
                         <p>{cdata.phone}</p>
                         <p>{cdata.email}</p>
                         <p>{cdata.fax}</p>
-                        <p>{cdata.profileLink}</p>
+                        <a href={cdata.profileLink}>Profile Link</a>
                     </div>
-                </div>
                 </div>
                 </>   
             )
         })}
-    </div>
+        </div>
+    </>
   )
 }
 
