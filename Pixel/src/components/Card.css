@@ -14,7 +14,7 @@ body {
   position: relative;
   padding: 0.5rem;
   margin: 1rem;
-  
+
   background: linear-gradient(
     135deg,
     rgba(255, 255, 255, 0.1),
@@ -24,19 +24,20 @@ body {
   -webkit-backdrop-filter: blur(10px);
   border-radius: 1rem;
   border: 1px solid rgba(225, 225, 225, 0.18);
-  
+
   margin-bottom: 4rem;
-  transition: all 0.5s cubic-bezier(1,0,1,0);;
+  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
 }
 
 .container {
+  position: relative;
   color: white;
   display: flex;
   gap: 4rem;
   text-align: center;
   flex-wrap: wrap;
   align-items: center;
-  margin: 2rem;
+  margin: 1rem;
   line-height: 1.4;
   justify-content: center;
 }
@@ -52,17 +53,34 @@ body {
 }
 
 .commitiee-card {
-  min-width: 15rem;
-  max-width: 12.5rem;
+  padding: 0.8rem;
+  min-height: 16rem;
+  max-height: auto;
+  width: 20rem;
+}
+
+@media only screen and (min-width: 500px) {
+  .commitiee-card {
+    width: 20rem;
+    height: 14rem;
+  }
+
+  .card-content a {
+    position: absolute;
+    bottom: 6%;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
 }
 
 .container .card:hover {
-  box-shadow: 0px 0px 15px 1px #e0dbdb3f; 
+  box-shadow: 0px 0px 15px 1px #e0dbdb3f;
+  border: 1px solid rgba(255, 255, 255, 0.454);
 }
 
 .card .card-image {
-  height: 8.7rem;
-  width: 8.7rem;
+  height: 9rem;
+  width: 9rem;
   border-radius: 50%;
   position: absolute;
   background-color: blue;
@@ -75,10 +93,9 @@ body {
 /*For speaker Page */
 
 .speaker-card {
-  min-width: 18rem;
-  max-width: 18rem;
+  min-width: 16rem;
+  max-width: 16rem;
   box-shadow: 0px 0px 15px 1px #e0dbdb3f;
-  
   height: 23rem;
   line-height: 1.5;
   transition: all ease 0.3s;
@@ -100,7 +117,7 @@ body {
   font-size: 1.5rem;
 }
 
-.speaker-content {
+.card-content {
   font-weight: 200;
   opacity: 70%;
 }
@@ -114,12 +131,12 @@ body {
   transform: translate(-50%, 0);
   border-radius: 1rem;
   border: none;
-  
+
   letter-spacing: 0.2px;
   cursor: pointer;
   text-transform: uppercase;
   font-weight: 400;
-  
+
   font-size: 0.85rem;
   background: linear-gradient(
     135deg,
@@ -129,7 +146,6 @@ body {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 1rem;
-  
 }
 
 .btn:hover {
@@ -140,7 +156,7 @@ body {
 .modal {
   position: fixed;
   left: 50%;
-  top : 50%;
+  top: 50%;
   transform: translate(-50%, -50%);
   width: 85vw;
   height: 85vh;
@@ -148,9 +164,9 @@ body {
   border-radius: 1rem;
   z-index: 10000;
   overflow-y: scroll;
-  transition: all 0.5s cubic-bezier(1,0,1,0);
-  
-  background-color:#242424 ;
+  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+
+  background-color: #242424;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 1rem;
@@ -166,7 +182,7 @@ body {
   cursor: pointer;
   border: none;
   background: none;
-  transition: all 0.5s cubic-bezier(1,0,1,0);
+  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
 }
 
 .modal::-webkit-scrollbar {
@@ -179,34 +195,33 @@ body {
   margin: 1.2rem;
   word-spacing: 0.2ch;
 }
-/*a:link,
-a:visited {
+
+.card-link:link,
+.card-link:visited {
   text-decoration: none;
   color: rgb(46, 46, 197);
 }
-a:hover {
+.card-link:hover {
   cursor: pointer;
 }
 
-a {
+.card-link {
   font-size: 1.1rem;
-}*/
+}
+
 .modal-titles {
   margin-top: 0.6rem;
   font-size: 1.2rem;
-  font-weight: 700rem;
+  font-weight: 900rem;
 }
 span {
   color: #e4dbdb;
   font-size: 1.1rem;
-  
-
-  /* text-decoration: none; */
 }
 
 .committie-speaker-card-images {
-object-fit: cover;
-height: 100%;
-width: 100%;
-border-radius: 50%;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
 }
