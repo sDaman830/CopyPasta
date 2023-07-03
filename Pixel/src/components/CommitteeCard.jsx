@@ -218,7 +218,9 @@ const commitieeMembers = [
     updatedAt: "2022-12-31T18:30:00.000Z",
   },
 ];
-export default function Commitiee() {
+
+
+export default function Committee() {
   return (
     <div className="container">
       {commitieeMembers?.map((member, i) => (

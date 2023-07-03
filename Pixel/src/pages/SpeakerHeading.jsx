@@ -1,6 +1,7 @@
 import React from "react";
 import './SpeakerHeading.css'
-import SpeakerCard from "../Components/SpeakerCard";
+import SpeakerCard from "../components/SpeakerCard";
+import FooterW from '../components/FooterW.jsx'
 
 const SpeakerHeading=()=>{
     return(
@@ -11,6 +12,7 @@ const SpeakerHeading=()=>{
             <SpeakerCard />
             </div>
         </div> 
+        <FooterW />
         </>
     )
 }

@@ -62,7 +62,10 @@ const AwardData = [
 
 const AwardSection = () => {
   return (
+    <div className='Majb'>
+    <h1 className="AwardsPHeading">Awards</h1>
     <div className='AwardContainer'>
+      
       {AwardData.map((award) => (
         <div className='AwardBox' key={award.id}>
           <div className='AwardName'>
@@ -81,6 +84,7 @@ const AwardSection = () => {
           </div>
         </div>
       ))}
+    </div>
     </div>
   );
 }

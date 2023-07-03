@@ -3,15 +3,17 @@
     margin: 0;
     padding: 0;
 }
-.majboori{
+.majbooriya{
+    margin-top: 2rem;
     display: flex;
     flex-direction:column;
     align-items: center;
     justify-content: center;
     padding: 1rem;
     margin: 2rem;
+    background-color: #ffffff;
 }
-.containersponsor{
+.containersponsorHome{
     display: flex;
     padding:1rem;
     margin: 1rem;
@@ -27,7 +29,7 @@
 
 .sponHome{
     padding: 0.75rem 1rem;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgb(255, 255, 255);
     border-color: 1rem rgba(0,0,0,0);
     box-shadow: 5px 5px black;
     font-weight:700;

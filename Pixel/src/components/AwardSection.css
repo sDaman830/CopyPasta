@@ -3,6 +3,12 @@
     margin: 0;
     box-sizing: border-box;
   }
+  .Majb{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   
   .AwardContainer {
     display: flex;
@@ -13,6 +19,23 @@
     margin: 2rem;
     flex-wrap: wrap;
   }
+  .AwardsPHeading{
+    text-align: center;
+    color: #ffffff;
+    padding: 1.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    margin: 2rem;
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0)
+    );
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    border: 1px solid rgba(225, 225, 225, 0.18);   
+}
   
   .AwardBox {
     display: flex;
