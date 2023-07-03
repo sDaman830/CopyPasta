@@ -257,7 +257,7 @@ function CommitieeCard({
         <h2 className="commitiee-title">{name}</h2>
         <div className="card-content">
           <p>{`${Designation} (${Institute})`}</p>
-          <a style={{ color: "#364fc7" }} href={ProfileLink}>
+          <a className="card-link" style={{ color: "#364fc7" }} href={ProfileLink}>
             Profile Link
           </a>
         </div>
