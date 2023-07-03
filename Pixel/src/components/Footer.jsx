@@ -7,34 +7,24 @@ import "leaflet/dist/leaflet.css";
 const Footer = () => {
   return (
     <>
-      <div className="container">
+      <div className="Footercontainer">
         <div className="divLink">
-          <a href="/">
+          <h1 className="FooterLogo">Conference</h1>
+          <br></br>
+          <a className="FooterLinks" href="/">
             <p>Home</p>
           </a>
-          <a href="/">
+          <a className="FooterLinks" href="/">
             <p>Speakers</p>
           </a>
-          <a href="/">
+          <a className="FooterLinks" href="/">
             <p>Committee</p>
           </a>
-          <a href="/">
+          <a className="FooterLinks" href="/">
             <p>Awards</p>
           </a>
-          <a href="/">
+          <a className="FooterLinks" href="/">
             <p>Contact Us</p>
-          </a>
-        </div>
-
-        <div className="divLink">
-          <a href="/">
-            <p>Home</p>
-          </a>
-          <a href="/">
-            <p>Speakers</p>
-          </a>
-          <a href="/">
-            <p>Committee</p>
           </a>
         </div>
 
@@ -45,7 +35,7 @@ const Footer = () => {
 
       <div className="footerLast">
         <div className="leftLast">
-          <p>Copyright@{new Date().getFullYear()} All Rights Reserved</p>
+          <p>Copyright@{new Date().getFullYear()} All Rights Reserved CopyPasta</p>
         </div>
       </div>
     </>

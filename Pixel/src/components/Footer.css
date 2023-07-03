@@ -2,10 +2,10 @@
   box-sizing: border-box;
 }
 
-.container {
+.Footercontainer {
   display: flex;
-  justify-content: space-around;
-  background-color: rgb(2, 44, 44);
+  justify-content: space-evenly;
+  background-color: rgb(17, 17, 17);
   flex-wrap: wrap;
   padding: 2rem;
   color: white;
@@ -19,12 +19,25 @@
   padding: 1rem;
   color: white;
 }
-a {
-  color: inherit;
-  text-decoration: inherit;
-  color: white;
-  line-height: 2rem;
+
+
+
+
+
+
+.FooterLogo{
+  margin: 1rem;
 }
+.FooterLinks{
+  text-decoration: inherit;
+  font-size:medium;
+  color: white;
+  line-height: 1.25rem;
+  text-align: center;
+  margin: 2rem;
+  font-weight: 900;
+}
+
 a:hover {
   padding-bottom: 12px;
   border-bottom: 3px solid var(--secondary-color);
@@ -33,7 +46,7 @@ a:hover {
 .leaflet-container {
   width: min(30rem, 90vw);
   height: 18rem;
-  border-radius: 12px;
+  border-radius: 1rem;
   margin-top: 2rem;
 }
 
@@ -41,7 +54,6 @@ a:hover {
   .leaflet-container {
     width: min(30rem, 90vw);
     height: 14rem;
-    border-radius: 12px;
     margin-top: 2rem;
   }
 }

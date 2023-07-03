@@ -7,11 +7,20 @@ const Navbar=()=>{
 
     const [click, setClick] = useState(false)
     const handleClick = () => setClick(!click)
-
+    const [color,setColor]=useState(false) 
+    const changeColor=()=>{
+        if(window.scrollY>=100){
+            setColor(true)
+        }
+        else{
+            setColor(false)
+        }
+    }
+    window.addEventListener('scroll', changeColor)
     const closeMenu = () => setClick(false)
 
     return (
-        <div className='headercompo'>
+        <div className={color? 'headercompo headercompo-bg':'headercompo'}>
             <nav className='navbar'>
                 <a href='/' className='logo'>
                     <h1>Conference</h1>

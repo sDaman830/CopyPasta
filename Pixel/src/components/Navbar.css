@@ -1,5 +1,5 @@
 .headercompo {
-     overflow: hidden;
+    
     position: fixed;
     height: 5rem;
     width: 100vw;
@@ -8,7 +8,12 @@
     z-index: 1;
     transition: .3s ease-in;
     overflow: hidden;
-    background-color: rgba(0,0,0,.9);
+    background-color: rgba(0,0,0,0.9);
+}
+.headercompo-bg{
+  background-color: rgba(0,0,0,0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .headercompo .navbar {
