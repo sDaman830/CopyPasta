@@ -4,7 +4,7 @@ import "./crousal.css";
 // Object that API fetch //
 const imageLinks = [
   {
-    imgLink:"AkleemCarousel.svg"
+    imgLink:"Carousel.svg"
   },
   {
 
@@ -59,6 +59,7 @@ export default function Crousal() {
   };
 
   return (
+    <div className="ContainCarousel">
     <div className="crousal-container">
       <div
         className="crousal-image"
@@ -88,6 +89,7 @@ export default function Crousal() {
           />
         ))}
       </div>
+    </div>
     </div>
   );
 }

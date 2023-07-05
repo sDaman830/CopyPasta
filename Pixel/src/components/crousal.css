@@ -1,40 +1,19 @@
-.crousal-container {
-  margin-top: 5rem;
-  position: relative;
+.ContainCarousel{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
-  width: 95vw;
-  max-height: 90vh;
+.crousal-container {
+  position: relative;
+  max-width: 1500px;
+  max-height: 750px;
   overflow: hidden;
   transition: transform 0.5s ease-out;
-  background-color: #fff;
   margin-bottom: 2rem;
+
 }
-
-@media only screen and (max-width: 850) {
-  .image-div {
-    height: 40vh;
-    width: 100wh;
-  }
-
-  .crousal-container {
-    position: relative;
-    width: 100vw;
-    min-height: 40vh;
-    max-height: 80%;
-    overflow: hidden;
-    transition: transform 1s ease-out;
-  }
-
-  .crousal-image img {
-    height: 40vh;
-
-    max-height: 100%;
-    width: 100%;
-    object-fit: cover;
-    transition: transform 2s ease-out;
-  }
-}
-
 .crousal-image {
   display: flex;
 
@@ -104,4 +83,30 @@
   color: red;
   position: absolute;
   z-index: 100;
+}
+
+
+@media only screen and (max-width: 850) {
+  .image-div {
+    height: 40vh;
+    width: 100wh;
+  }
+
+  .crousal-container {
+    position: relative;
+    width: 100vw;
+    min-height: 40vh;
+    max-height: 80%;
+    overflow: hidden;
+    transition: transform 1s ease-out;
+  }
+
+  .crousal-image img {
+    height: 40vh;
+
+    max-height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 2s ease-out;
+  }
 }
