@@ -1,14 +1,15 @@
-import React from 'react'
-import Contacts from '../components/Contacts'
-import Footer from '../components/Footer'
+import React, { useState, useEffect } from 'react';
+import Contacts from '../components/Contacts';
+import Footer from '../components/Footer';
+import { baseUrl, conferencesUrl, apiKey, confId } from '../../api';
 
-const ContactPage = () => {
+function ContactPage() {
   return (
     <>
-    <Contacts />
-    <Footer />
+      <Contacts />
+      <Footer />
     </>
-  )
+  );
 }
 
-export default ContactPage
+export default ContactPage;
