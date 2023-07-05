@@ -1,8 +1,55 @@
 import React from 'react'
 import './SponsorSection.css'
 import '/index.js'
+import { getsponsors } from '../apireq/getrequests';
+import { useState,useEffect } from 'react';
 
-const TitleSponsorData=[
+const SponsorSection = () => {
+    const [sponsors, setSponsors] = useState([]);
+
+    useEffect(() => {
+     let mounted = true;
+     getsponsors()
+       .then(sdata => {
+         if(mounted) {
+           setSponsors(sdata)
+         }
+       })
+     return () => mounted = false;
+   }, [])
+  return (
+    <div className='SponsorContain'>
+        <h1 className='TitleSpon'>Title Sponsors</h1>
+        <div className='SScontainersponsor'>
+            {TitleSponsorData[0].map((Tdata) => {
+                return (
+                    <div className='sponimg' key={Tdata.id}>
+                        <img className='Sponimage' src={Tdata.logo} alt="sponsors" />
+                    </div>
+                );
+            })}
+        </div>
+        <br></br>
+
+        <h1 className='PlatinumSpon'>Platinum Sponsors</h1>
+        <div className='SScontainersponsor'>
+            {PlatinumSponsorData.map((Pdata,id)=>{
+            return(
+                <div className='sponimg'>
+                <img className='Sponimage' src={Pdata.logo} alt="sponsors"/>
+                </div>
+            )
+        })}
+        </div>
+        <br></br>
+
+    </div>
+  )
+}
+
+export default SponsorSection
+
+/*const TitleSponsorData=[
     [
         {
             "id": "648c5e593b0c1e0d8803731b",
@@ -86,37 +133,4 @@ const PlatinumSponsorData=[
         "createdAt": "2023-06-18T04:38:39.282Z",
         "updatedAt": "2023-06-18T04:38:39.282Z"
     }
-]
-
-const SponsorSection = () => {
-  return (
-    <div className='SponsorContain'>
-        <h1 className='TitleSpon'>Title Sponsors</h1>
-        <div className='SScontainersponsor'>
-            {TitleSponsorData[0].map((Tdata) => {
-                return (
-                    <div className='sponimg' key={Tdata.id}>
-                        <img className='Sponimage' src={Tdata.logo} alt="sponsors" />
-                    </div>
-                );
-            })}
-        </div>
-        <br></br>
-
-        <h1 className='PlatinumSpon'>Platinum Sponsors</h1>
-        <div className='SScontainersponsor'>
-            {PlatinumSponsorData.map((Pdata,id)=>{
-            return(
-                <div className='sponimg'>
-                <img className='Sponimage' src={Pdata.logo} alt="sponsors"/>
-                </div>
-            )
-        })}
-        </div>
-        <br></br>
-
-    </div>
-  )
-}
-
-export default SponsorSection
+]*/

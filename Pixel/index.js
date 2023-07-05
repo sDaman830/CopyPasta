@@ -1,3 +1,4 @@
+/*
 const apiKey = "G6mS3Y";
 const conferencesUrl = "https://conference.cyclic.app/conf";
 const baseUrl = "https://conference.cyclic.app";
@@ -221,4 +222,4 @@ async function fetchParticipantsData(conferenceId) {
     }
 }
 
-fetchConferenceId();
+fetchConferenceId();*/
