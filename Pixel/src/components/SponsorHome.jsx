@@ -1,38 +1,38 @@
-import React from 'react'
-import './SponsorHome.css'
-import {Link} from 'react-router-dom'
+import React from 'react';
+import './SponsorHome.css';
+import { Link } from 'react-router-dom';
+import { getsponsors } from '../apireq/getrequests';
 
-const SponsorLogoData=[
-    {
-        id: 1,
-        logoURL: 'https://www.r10htc2023.org/images/Sponsor/maggenome.png'
-    },{
-        id: 2,
-        logoURL: 'https://www.r10htc2023.org/images/Sponsor/maggenome.png'
-    },{
-        id: 3,
-        logoURL: 'https://www.r10htc2023.org/images/Sponsor/maggenome.png'
-    },
-]
-const SponsorHome=()=>{
-    return(
+const SponsorHome = () => {
+    const [titleSponsors, setTitleSponsors] = React.useState([]);
+
+    React.useEffect(() => {
+        getsponsors().then(sponsorsData => {
+            const filteredTitleSponsors = sponsorsData.filter(
+                sponsor => sponsor.type === 'Title Sponsors'
+            );
+            setTitleSponsors(filteredTitleSponsors);
+        });
+    }, []);
+
+    return (
         <div className='majboorSponHome'>
-        <h1>Our Sponsors</h1>
-        <div className='containersponsorHome'>
-            {SponsorLogoData.map((ldata,id)=>{
-            return(
-                <div className='sponimg'>
-                <img className='Sponimage' src={ldata.logoURL} alt="sponsors"/>
-                </div>
-            )
-        })}
-        
+            <h1>Our Sponsors</h1>
+            <div className='containersponsorHome'>
+                {titleSponsors.map((ldata, id) => {
+                    return (
+                        <div className='sponimg' key={ldata.id}>
+                            <img className='Sponimage' src={ldata.logo} alt='sponsors' />
+                        </div>
+                    );
+                })}
+            </div>
+            <br></br>
+            <Link to='/awards'>
+                <button className='sponHome'>Check out our Sponsors</button>
+            </Link>
         </div>
-        <br></br>
-        <Link to="/awards">
-        <button className='sponHome'>Check out our Sponsors</button>
-        </Link>
-        </div>
-    )
-}
-export default SponsorHome
+    );
+};
+
+export default SponsorHome;
