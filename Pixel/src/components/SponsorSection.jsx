@@ -21,10 +21,10 @@ const SponsorSection = () => {
     <div className='SponsorContain'>
         <h1 className='TitleSpon'>Title Sponsors</h1>
         <div className='SScontainersponsor'>
-            {TitleSponsorData[0].map((Tdata) => {
+            {sponsors.map((sdata) => {
                 return (
-                    <div className='sponimg' key={Tdata.id}>
-                        <img className='Sponimage' src={Tdata.logo} alt="sponsors" />
+                    <div className='sponimg' key={sdata.id}>
+                        <img className='Sponimage' src={sdata.logo} alt="sponsors" />
                     </div>
                 );
             })}
@@ -33,10 +33,10 @@ const SponsorSection = () => {
 
         <h1 className='PlatinumSpon'>Platinum Sponsors</h1>
         <div className='SScontainersponsor'>
-            {PlatinumSponsorData.map((Pdata,id)=>{
+            {sponsors.map((sdata,id)=>{
             return(
                 <div className='sponimg'>
-                <img className='Sponimage' src={Pdata.logo} alt="sponsors"/>
+                <img className='Sponimage' src={sdata.logo} alt="sponsors"/>
                 </div>
             )
         })}
