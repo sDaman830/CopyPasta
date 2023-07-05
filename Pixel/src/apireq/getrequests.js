@@ -1,5 +1,13 @@
 import {baseUrl,conferencesUrl,apiKey,confId} from '../../api'
 
+export function getimages() {
+  return fetch(`${baseUrl}/images/${confId}`, {
+      headers: {
+        'Authorization': `${apiKey}`,
+      }
+    }).then(data => data.json())
+}
+
 export function getannounce() {
   return fetch(`${baseUrl}/announcement`, {
       headers: {

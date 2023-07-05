@@ -4,7 +4,7 @@ import { useState,useEffect } from 'react';
 
 const imageLinks = [
   {
-    imgLink:"Carousel.svg"
+    imgLink:"car2.svg"
   }
 ];
 
@@ -36,8 +36,8 @@ export default function Crousal() {
           <>
             <img
               className="image-div"
-              width={1200}
-              height={1200}
+              width={1800}
+              height={750}
               key={index}
               src={images[curr]}
               alt={`Slide ${index}`}
