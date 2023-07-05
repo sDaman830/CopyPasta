@@ -2,27 +2,25 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+}
+.accordWrapper{
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
 }
 
 .AnnounceHeading{
     color: #ffffff;
     padding: 1rem;
     margin: 1rem;
-}
-
-.accordWrapper{
-    background-color: #000000;
-    display: flex;
-    max-height: auto;
-    width: 97vw;
-    overflow: hidden;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-    margin: 1rem;
-    border-radius: 1rem;
-    flex-direction: column;
 }
 
 .accord{

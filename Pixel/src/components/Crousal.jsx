@@ -36,8 +36,6 @@ export default function Crousal() {
           <>
             <img
               className="image-div"
-              width={1800}
-              height={750}
               key={index}
               src={images[curr]}
               alt={`Slide ${index}`}
