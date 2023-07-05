@@ -87,7 +87,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("bg2.svg");
+  background-image: url("../assets/bg2.svg");
 }
 
 @media only screen and (min-width: 500px) {
