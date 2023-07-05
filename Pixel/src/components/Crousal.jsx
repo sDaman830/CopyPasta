@@ -1,43 +1,11 @@
-import { useState } from "react";
 import "./crousal.css";
+import { getimages } from '../apireq/getrequests';
+import { useState,useEffect } from 'react';
 
-// Object that API fetch //
 const imageLinks = [
   {
     imgLink:"Carousel.svg"
-  },
-  {
-
-    id: "6492f8634bd54b3b9c0906ec",
-    confId: "647f315f62cdb3a26174fc38",
-    name: "WIE",
-    imgLink:
-      "https://ieeewie.wpenginepowered.com/wp-content/uploads/woman_engineer_laptop.jpg",
-    feature: true,
-    sequence: 0,
-    createdAt: "2023-06-21T13:17:21.096Z",
-    updatedAt: "2023-06-23T03:37:04.142Z",
-  },
-  {
-    id: "6492f9274bd54b3b9c0906f6",
-    confId: "647f315f62cdb3a26174fc38",
-    name: "Last year WIE",
-    imgLink: "https://v1.nitj.ac.in/nitj_files/links/1_90512.JPG",
-    feature: true,
-    sequence: 1,
-    createdAt: "2023-06-21T13:20:35.662Z",
-    updatedAt: "2023-06-23T03:37:04.142Z",
-  },
-  {
-    id: "6492f96f4bd54b3b9c0906fa",
-    confId: "647f315f62cdb3a26174fc38",
-    name: "WIE volunteers",
-    imgLink: "https://v1.nitj.ac.in/nitj_files/links/2_64856.JPG",
-    feature: true,
-    sequence: 2,
-    createdAt: "2023-06-21T13:21:48.254Z",
-    updatedAt: "2023-06-23T03:37:04.142Z",
-  },
+  }
 ];
 
 function extractImageLinks(images) {
@@ -45,7 +13,6 @@ function extractImageLinks(images) {
 }
 
 const images = extractImageLinks(imageLinks);
-console.log(images);
 
 export default function Crousal() {
   const [curr, setCurr] = useState(0);
