@@ -8,11 +8,11 @@ import Timeline from '../components/Timeline'
 const Home = () => {
   return (
     <>
-    <Crousal />
-    <Announcement />
-    <Timeline />
-    <SponsorHome />
-    <Footer />
+      <Crousal />
+      <Announcement />
+      <Timeline />
+      <SponsorHome />
+      <Footer />
     </>
   )
 }
