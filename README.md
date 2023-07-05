@@ -1,6 +1,6 @@
 # Conference App
 
-This project is a conference app built using React, Vite, CSS, and HTML.
+This SPA project is a responsive conference app built using React, Vite, CSS, and HTML.
 
 ## Features
 
@@ -10,7 +10,8 @@ This project is a conference app built using React, Vite, CSS, and HTML.
 ## Technologies Used
 
 - React: A JavaScript library for building user interfaces.
-- Vite: A fast build tool for modern web development.
+- React-Router-v6: A React library for routing.
+- Vite: A fast-build tool for modern web development.
 - CSS: A stylesheet language used for styling web pages.
 - HTML: The standard markup language for creating web pages.
 
