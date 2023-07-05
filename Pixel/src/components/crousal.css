@@ -1,18 +1,15 @@
 .ContainCarousel{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
 }
 
 .crousal-container {
   position: relative;
-  max-width: 1500px;
-  max-height: 750px;
+  height: 100%;
   overflow: hidden;
   transition: transform 0.5s ease-out;
   margin-bottom: 2rem;
-
 }
 .crousal-image {
   display: flex;
@@ -23,11 +20,9 @@
 }
 
 .crousal-image img {
-  min-width: 100%;
-  min-height: 100%;
-  max-height: vh;
-  max-width: 100%;
-  object-fit: cover;
+  background-position: center;
+  border-radius: 1rem;
+  background-size: cover;
   transition: transform 2s ease-out;
 }
 
