@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .containerEvent{
-    background-image: url("Desktop-2.png");
+    background-image: url("../assets/Desktop-2.png");
     background-size: cover;
     display: flex;
     flex-direction: column;
