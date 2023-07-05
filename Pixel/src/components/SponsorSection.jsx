@@ -1,53 +1,65 @@
-import React from 'react'
-import './SponsorSection.css'
-import '/index.js'
+import React from 'react';
+import './SponsorSection.css';
+import '/index.js';
 import { getsponsors } from '../apireq/getrequests';
-import { useState,useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 const SponsorSection = () => {
     const [sponsors, setSponsors] = useState([]);
+    const [titleSponsors, setTitleSponsors] = useState([]);
+    const [platinumSponsors, setPlatinumSponsors] = useState([]);
 
     useEffect(() => {
-     let mounted = true;
-     getsponsors()
-       .then(sdata => {
-         if(mounted) {
-           setSponsors(sdata)
-         }
-       })
-     return () => mounted = false;
-   }, [])
-  return (
-    <div className='SponsorContain'>
-        <h1 className='TitleSpon'>Title Sponsors</h1>
-        <div className='SScontainersponsor'>
-            {sponsors.map((sdata) => {
-                return (
-                    <div className='sponimg' key={sdata.id}>
-                        <img className='Sponimage' src={sdata.logo} alt="sponsors" />
-                    </div>
-                );
-            })}
+        let mounted = true;
+        getsponsors().then(sdata => {
+            if (mounted) {
+                setSponsors(sdata);
+            }
+        });
+        return () => (mounted = false);
+    }, []);
+
+    useEffect(() => {
+        const filteredTitleSponsors = sponsors.filter(
+            sponsor => sponsor.type === 'Title Sponsors'
+        );
+        const filteredPlatinumSponsors = sponsors.filter(
+            sponsor => sponsor.type === 'Platinum Sponsors'
+        );
+        setTitleSponsors(filteredTitleSponsors);
+        setPlatinumSponsors(filteredPlatinumSponsors);
+    }, [sponsors]);
+
+    return (
+        <div className='SponsorContain'>
+            <h1 className='TitleSpon'>Title Sponsors</h1>
+            <div className='SScontainersponsor'>
+                {titleSponsors.map(sdata => {
+                    return (
+                        <div className='sponimg' key={sdata.id}>
+                            <img className='Sponimage' src={sdata.logo} alt='sponsors' />
+                        </div>
+                    );
+                })}
+            </div>
+            <br></br>
+
+            <h1 className='PlatinumSpon'>Platinum Sponsors</h1>
+            <div className='SScontainersponsor'>
+                {platinumSponsors.map(sdata => {
+                    return (
+                        <div className='sponimg' key={sdata.id}>
+                            <img className='Sponimage' src={sdata.logo} alt='sponsors' />
+                        </div>
+                    );
+                })}
+            </div>
+            <br></br>
         </div>
-        <br></br>
+    );
+};
 
-        <h1 className='PlatinumSpon'>Platinum Sponsors</h1>
-        <div className='SScontainersponsor'>
-            {sponsors.map((sdata,id)=>{
-            return(
-                <div className='sponimg'>
-                <img className='Sponimage' src={sdata.logo} alt="sponsors"/>
-                </div>
-            )
-        })}
-        </div>
-        <br></br>
-
-    </div>
-  )
-}
-
-export default SponsorSection
+export default SponsorSection;
 
 /*const TitleSponsorData=[
     [
